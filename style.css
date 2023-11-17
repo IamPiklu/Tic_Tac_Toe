@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto+Mono:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+nav {
+    background-color: brown;
+    color: black;
+    height: 55px;
+    display: flex;
+    font-size: 46px;
+    align-items: center;
+    padding: 0px 15px;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.gamecontainer {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.imagebox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.boxtext {}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: aqua;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    position: relative;
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.info {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gameinfo {
+    padding: 0 160px;
+    font-family: 'Roboto Mono', monospace;
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 30vw;
+    position: absolute;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+#reset {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    background: #dedef2;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+@media screen and (max-width:950px) {
+
+    .gamecontainer {
+        flex-wrap: wrap;
+    }
+
+    .gameinfo {
+        padding: 2px 27px;
+        margin: 34px;
+        font-size: 1.2rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+}
